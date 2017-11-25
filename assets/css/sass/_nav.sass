@@ -1,0 +1,27 @@
+.ee-nav ul li:first-child
+  margin-bottom: 1.5rem
+
+.ee-nav a
+  position: relative
+
+  &:hover:before
+    width: 8px
+    +easeall
+
+.ee-nav a:before,
+.ee-nav--is-active:before
+  content: ""
+  display: block
+  width: 8px
+  height: 1px
+  background: $color-black
+  position: absolute
+  top: 12px
+  left: -20px
+
+.ee-nav a:before
+  width: 0
+  +easeall
+
+.ee-nav--is-active:before
+  width: 8px !important
