@@ -1,9 +1,33 @@
-.ee-big-product-container
+section
   position: absolute
   top: 0
   left: 0
   right: 0
   z-index: 0
 
-  & > div
-    margin: 0 0 -10px 0
+// .ee-big-product-container
+//   position: absolute
+//   top: 0
+//   left: 0
+//   right: 0
+//   z-index: 0
+
+  // & > div
+  //   margin: 0 0 -10px 0
+
+.ee-big-product-container
+  position: relative
+
+.ee-small-products
+  position: absolute
+  left: 0
+  right: 0
+  top: 50%
+  transform: translateY(-50%)
+  margin: auto
+  max-width: 640px
+  display: grid
+  grid-template-columns: 1fr 1fr
+
+  img
+    max-width: 250px

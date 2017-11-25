@@ -58,7 +58,8 @@ body {
   color: black;
   letter-spacing: .1rem;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: lowercase; }
 
 a {
   text-decoration: none;
@@ -74,17 +75,30 @@ svg {
 
 header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   position: fixed;
   z-index: 10;
   width: 100%;
   top: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  height: 100%; }
   header > div {
-    padding: 2.5rem 4rem; }
+    padding: 1rem; }
+    @media (min-width: 640px) {
+      header > div {
+        padding: 2.5rem 4rem; } }
   header li {
     padding: .5em 0; }
+  @media (min-width: 640px) {
+    header {
+      grid-template-columns: 1fr 1fr; } }
+
+.ee-nav {
+  display: none; }
+  @media (min-width: 640px) {
+    .ee-nav {
+      display: block; } }
 
 .ee-nav ul li:first-child {
   margin-bottom: 1.5rem; }
@@ -110,25 +124,67 @@ header {
   content: "—" !important; }
 
 .ee-product-info {
-  text-align: right; }
+  text-align: right;
+  display: block;
+  height: 100%; }
 
 .ee-product-info ul {
+  position: relative;
+  z-index: 10;
   margin-bottom: 1.5rem; }
 
 .ee-product-info a {
   padding: .25rem; }
   .ee-product-info a:hover {
     background: black;
-    color: #f9f5f0; }
+    color: #fbf8ed; }
 
 .ee-inline li {
   display: inline-block; }
 
-.ee-big-product-container {
+section {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 0; }
-  .ee-big-product-container > div {
-    margin: 0 0 -10px 0; }
+
+.ee-big-product-container {
+  position: relative; }
+
+.ee-small-products {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  max-width: 640px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .ee-small-products img {
+    max-width: 250px; }
+
+footer {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  width: 100%; }
+  footer > div {
+    padding: 1rem; }
+    @media (min-width: 640px) {
+      footer > div {
+        padding: 2.5rem 4rem; } }
+  footer li {
+    padding: .5em 0; }
+
+.ee-legal {
+  text-align: right;
+  position: relative; }
+  .ee-legal span {
+    font-family: monospace;
+    font-weight: bold; }

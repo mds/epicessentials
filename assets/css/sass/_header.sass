@@ -1,15 +1,24 @@
 header
   display: grid
-  grid-template-columns: 1fr 1fr
+  grid-template-columns: 1fr
   position: fixed
   z-index: 10
   width: 100%
   top: 0
   left: 0
   right: 0
+  height: 100%
 
   & > div
-    padding: 2.5rem 4rem
+    padding: 1rem
+
+    +small
+      padding: 2.5rem 4rem
 
   li
     padding: .5em 0
+
+  +small
+    grid-template-columns: 1fr 1fr
+
+

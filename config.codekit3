@@ -9,6 +9,19 @@
 	],
 "creatorBuild": "26097",
 "files": {
+	"\/assets\/css\/sass\/_footer.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/sass\/_footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/css\/sass\/_global.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -136,6 +149,26 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/assets\/img\/product-beanie-small-1.jpg": {
+		"ft": 16384,
+		"iS": 5617,
+		"oA": 0,
+		"oAP": "\/assets\/img\/product-beanie-small-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/assets\/img\/product-beanie-small-2.jpg": {
+		"ft": 16384,
+		"iS": 5617,
+		"oA": 0,
+		"oAP": "\/assets\/img\/product-beanie-small-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/assets\/img\/product-beanie.jpg": {
 		"ft": 16384,
 		"iS": 912598,
@@ -146,11 +179,51 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/img\/product-hat-small-1.jpg": {
+		"ft": 16384,
+		"iS": 5617,
+		"oA": 0,
+		"oAP": "\/assets\/img\/product-hat-small-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/product-hat-small-2.jpg": {
+		"ft": 16384,
+		"iS": 5617,
+		"oA": 0,
+		"oAP": "\/assets\/img\/product-hat-small-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/assets\/img\/product-hat.jpg": {
 		"ft": 16384,
 		"iS": 696552,
 		"oA": 0,
 		"oAP": "\/assets\/img\/product-hat.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/product-hoodie-small-1.jpg": {
+		"ft": 16384,
+		"iS": 38971,
+		"oA": 0,
+		"oAP": "\/assets\/img\/product-hoodie-small-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/product-hoodie-small-2.jpg": {
+		"ft": 16384,
+		"iS": 5617,
+		"oA": 0,
+		"oAP": "\/assets\/img\/product-hoodie-small-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -166,6 +239,26 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/img\/product-shirt-small-1.jpg": {
+		"ft": 16384,
+		"iS": 55112,
+		"oA": 0,
+		"oAP": "\/assets\/img\/product-shirt-small-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/product-shirt-small-2.jpg": {
+		"ft": 16384,
+		"iS": 55570,
+		"oA": 0,
+		"oAP": "\/assets\/img\/product-shirt-small-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/assets\/img\/product-shirt.jpg": {
 		"ft": 16384,
 		"iS": 542001,
@@ -176,12 +269,32 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/js\/index-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/index-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/assets\/js\/index.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/assets\/js\/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/rellax.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/rellax-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

@@ -1,15 +1,32 @@
 .ee-product-info
   text-align: right
+  display: block
+  height: 100%
+
+  // &:after
+  //   content: ""
+  //   display: block
+  //   width: 320px
+  //   height: 100%
+  //   top: 0
+  //   right: 0
+  //   position: absolute
+  //   background: rgba($color-light, .9)
+  //   z-index: 1
+  //   opacity: 0
+  //   +easeall
+
+  // &:hover:after
+  //   opacity: 1
+  //   +easeall
 
 .ee-product-info ul
+  position: relative
+  z-index: 10
   margin-bottom: 1.5rem
-
-// .ee-product-info li
-//   padding: .5rem 0
 
 .ee-product-info a
   padding: .25rem
-  //border-radius: 2px
 
   &:hover
     background: $color-black

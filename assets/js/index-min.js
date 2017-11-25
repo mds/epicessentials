@@ -1,0 +1,1 @@
+$(document).ready(function(){var l=new Rellax(".rellax",{callback:function(l){console.log(l)}})});
