@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -62,7 +63,6 @@ body {
 a {
   text-decoration: none;
   color: black;
-  padding: .5em 0;
   display: inline-block; }
 
 img,
@@ -75,10 +75,16 @@ svg {
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  position: relative;
-  z-index: 10; }
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0; }
   header > div {
     padding: 2.5rem 4rem; }
+  header li {
+    padding: .5em 0; }
 
 .ee-nav ul li:first-child {
   margin-bottom: 1.5rem; }
@@ -86,26 +92,22 @@ header {
 .ee-nav a {
   position: relative; }
   .ee-nav a:hover:before {
-    width: 8px;
-    transition: all .2s ease-out; }
+    content: "—"; }
 
 .ee-nav a:before,
 .ee-nav--is-active:before {
-  content: "";
+  content: "—";
   display: block;
-  width: 8px;
-  height: 1px;
-  background: black;
+  color: black;
   position: absolute;
-  top: 12px;
+  top: 0px;
   left: -20px; }
 
 .ee-nav a:before {
-  width: 0;
-  transition: all .2s ease-out; }
+  content: ""; }
 
 .ee-nav--is-active:before {
-  width: 8px !important; }
+  content: "—" !important; }
 
 .ee-product-info {
   text-align: right; }
@@ -113,21 +115,20 @@ header {
 .ee-product-info ul {
   margin-bottom: 1.5rem; }
 
-.ee-product-info li {
-  padding: .5rem 0; }
-
 .ee-product-info a {
   padding: .25rem; }
   .ee-product-info a:hover {
     background: black;
-    color: white; }
+    color: #f9f5f0; }
 
 .ee-inline li {
   display: inline-block; }
 
-.ee-big-image {
+.ee-big-product-container {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 0; }
+  .ee-big-product-container > div {
+    margin: 0 0 -10px 0; }

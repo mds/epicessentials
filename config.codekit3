@@ -136,9 +136,39 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/assets\/img\/product-beanie.jpg": {
+		"ft": 16384,
+		"iS": 912598,
+		"oA": 0,
+		"oAP": "\/assets\/img\/product-beanie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/product-hat.jpg": {
+		"ft": 16384,
+		"iS": 696552,
+		"oA": 0,
+		"oAP": "\/assets\/img\/product-hat.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/product-hoodie.jpg": {
+		"ft": 16384,
+		"iS": 1417491,
+		"oA": 0,
+		"oAP": "\/assets\/img\/product-hoodie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/assets\/img\/product-shirt.jpg": {
 		"ft": 16384,
-		"iS": 259162,
+		"iS": 542001,
 		"oA": 0,
 		"oAP": "\/assets\/img\/product-shirt.jpg",
 		"oF": 0,
@@ -155,6 +185,13 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"\/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/favicon.ico",
+		"oF": 0
 		},
 	"\/index.html": {
 		"cB": 0,

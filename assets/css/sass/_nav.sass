@@ -5,23 +5,19 @@
   position: relative
 
   &:hover:before
-    width: 8px
-    +easeall
+    content: "—"
 
 .ee-nav a:before,
 .ee-nav--is-active:before
-  content: ""
+  content: "—"
   display: block
-  width: 8px
-  height: 1px
-  background: $color-black
+  color: $color-black
   position: absolute
-  top: 12px
+  top: 0px
   left: -20px
 
 .ee-nav a:before
-  width: 0
-  +easeall
+  content: ""
 
 .ee-nav--is-active:before
-  width: 8px !important
+  content: "—" !important
