@@ -26,6 +26,7 @@ $(window).on("load", function() {
       $(".ee-product-title").html("epic shirt");
       $(".ee-product-price").html("$35");
       $(".ee-product-style").html('<p>select a color</p><li><a>black</a></li><li><a>grey</a></li><li><a>white</a></li>');
+      $(".ee-product-size").html('<p>select a unisex size</p><li><a>s</a></li><li><a>m</a></li><li><a>l</a></li><li><a>xl</a></li><li><a>xxl</a></li><p>(they run small)</p>');
     });
   // END Shirt Scene ------------------------------------------------------------
 
@@ -77,7 +78,6 @@ $(window).on("load", function() {
       $(".ee-product-price").html("$25");
       $(".ee-product-style").html('<p>select a style</p><li><a>regular</a></li><li><a>distressed</a></li>');
       $(".ee-product-size").html('<p>(one size fits all)</p>');
-      $(".ee-product-size").html('<p>select a unisex size</p><li><a>s</a></li><li><a>m</a></li><li><a>l</a></li><li><a>xl</a></li><li><a>xxl</a></li><p>(they run small)</p>');
     });
   // END Trucker Hat Scene ------------------------------------------------------------
 
