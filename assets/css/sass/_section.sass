@@ -5,16 +5,16 @@ section
   right: 0
   z-index: 0
 
-.ee-big-product-container
+.ee-product-container
   position: relative
-  margin-bottom: -10px
-  // padding: .5rem 1rem
+  // max-height: 1600px
+  padding: .5rem 1rem
 
-  // &:first-child
-  //   padding: 1rem 1rem .5rem
+  &:first-child
+    padding: 1rem 1rem .5rem
 
-  // &:last-child
-  //   padding: .5rem 1rem 7rem
+  &:last-child
+    padding: .5rem 1rem 7rem
 
 .ee-small-products
   position: absolute
@@ -28,6 +28,10 @@ section
   max-width: 640px
   display: grid
   grid-template-columns: 1fr 1fr
+  transform: scale(.75)
+
+  +small
+    transform: scale(1.25)
 
   img
     position: relative
@@ -36,6 +40,20 @@ section
 
     &:first-child
       top: 6rem
+
+.ee-big-product
+  position: relative
+  display: block
+  top: 0
+  left: 0
+  right: 0
+
+  img
+    position: relative
+    top: 0
+    left: 0
+    right: 0
+
 
 
 // adjustments for parrallax

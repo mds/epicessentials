@@ -159,16 +159,6 @@
 		"opt": 1,
 		"q": 100
 		},
-	"\/assets\/img\/product-beanie-small-2.jpg": {
-		"ft": 16384,
-		"iS": 5617,
-		"oA": 0,
-		"oAP": "\/assets\/img\/product-beanie-small-2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
 	"\/assets\/img\/product-beanie.jpg": {
 		"ft": 16384,
 		"iS": 912598,
@@ -177,6 +167,26 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/product-dadhat-small-2.jpg": {
+		"ft": 16384,
+		"iS": 34594,
+		"oA": 0,
+		"oAP": "\/assets\/img\/product-dadhat-small-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/assets\/img\/product-dadhat.jpg": {
+		"ft": 16384,
+		"iS": 797745,
+		"oA": 0,
+		"oAP": "\/assets\/img\/product-dadhat.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/img\/product-hoodie-small-1.jpg": {
@@ -196,7 +206,7 @@
 		"oAP": "\/assets\/img\/product-hoodie-small-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/img\/product-hoodie.jpg": {

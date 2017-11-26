@@ -34,14 +34,6 @@
   <meta property="og:description" content="One stop shop for all of your Epic needs." />
   <meta property="og:site_name" content="Epic Essentials" />
 
-  <!-- Jaba the Scripts -->
-  <script type="text/javascript" src="assets/js/lib/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/js/lib/greensock/TweenMax.min.js"></script>
-  <script type="text/javascript" src="assets/js/scrollmagic/uncompressed/ScrollMagic.js"></script>
-  <script type="text/javascript" src="assets/js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-  <script type="text/javascript" src="assets/js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
-  <script type="text/javascript" src="assets/js/index.js"></script>
-
 </head>
 <body>
 
@@ -52,7 +44,7 @@
         <li><a href="#shirt" class="ee-nav--is-active">shirt</a></li>
         <li><a href="#hoodie">hoodie</a></li>
         <li><a href="#truckerhat">trucker hat</a></li>
-        <!-- <li><a href="#">low hat</a></li> -->
+        <li><a href="#dadhat">dad hat</a></li>
         <li><a href="#beanie">beanie</a></li>
       </ul>
     </div>
@@ -64,18 +56,18 @@
         </ul>
         <ul class="ee-product-style ee-inline">
           <p>select a color</p>
-          <li><a href="#">black</a></li>
-          <li><a href="#">grey</a></li>
-          <li><a href="#">white</a></li>
+          <li><a>black</a></li>
+          <li><a>grey</a></li>
+          <li><a>white</a></li>
         </ul>
 
         <ul class="ee-product-size ee-inline">
           <p>select a unisex size</p>
-          <li><a href="#">s</a></li>
-          <li><a href="#">m</a></li>
-          <li><a href="#">l</a></li>
-          <li><a href="#">xl</a></li>
-          <li><a href="#">xxl</a></li>
+          <li><a>s</a></li>
+          <li><a>m</a></li>
+          <li><a>l</a></li>
+          <li><a>xl</a></li>
+          <li><a>xxl</a></li>
           <p>(they run small)</p>
         </ul>
         <a href="#">add to cart</a>
@@ -96,50 +88,76 @@
   </footer>
 
   <section>
-    <div id="shirt" class="ee-big-product-container">
+    <div id="shirt" class="ee-product-container">
       <!-- small images -->
       <div class="ee-small-products">
         <img class="ee-small-product-1" alt="epic shirt" src="assets/img/product-shirt-small-1.jpg" />
         <img class="ee-small-product-2" alt="epic shirt" src="assets/img/product-shirt-small-2.jpg" />
       </div>
       <!-- big image -->
-      <img alt="epic shirt" src="assets/img/product-shirt.jpg" />
+      <div class="ee-big-product">
+        <img alt="epic shirt" src="assets/img/product-shirt.jpg" />
+      </div>
     </div>
 
-    <div id="hoodie" class="ee-big-product-container">
+    <div id="hoodie" class="ee-product-container">
       <!-- small images -->
       <div class="ee-small-products">
         <img class="ee-small-product-1" alt="epic hoodie" src="assets/img/product-hoodie-small-1.jpg" />
         <img class="ee-small-product-2" alt="epic hoodie" src="assets/img/product-hoodie-small-2.jpg" />
       </div>
       <!-- big image -->
-      <img alt="epic hoodie" src="assets/img/product-hoodie.jpg" />
+      <div class="ee-big-product">
+        <img alt="epic hoodie" src="assets/img/product-hoodie.jpg" />
+      </div>
     </div>
 
-    <div id="truckerhat" class="ee-big-product-container">
+    <div id="truckerhat" class="ee-product-container">
       <!-- small images -->
       <div class="ee-small-products">
         <img class="ee-small-product-1" alt="epic trucker hat" src="assets/img/product-truckerhat-small-1.jpg" />
         <img class="ee-small-product-2" alt="epic trucker hat" src="assets/img/product-truckerhat-small-2.jpg" />
       </div>
       <!-- big image -->
-      <img alt="epic truckerhat" src="assets/img/product-truckerhat.jpg" />
+      <div class="ee-big-product">
+        <img alt="epic truckerhat" src="assets/img/product-truckerhat.jpg" />
+      </div>
     </div>
 
-    <div id="beanie" class="ee-big-product-container">
+    <div id="dadhat" class="ee-product-container">
+      <!-- small images -->
+      <div class="ee-small-products">
+        <img class="ee-small-product-1" alt="epic trucker hat" src="assets/img/product-dadhat-small-1.jpg" />
+        <img class="ee-small-product-2" alt="epic trucker hat" src="assets/img/product-dadhat-small-2.jpg" />
+      </div>
+      <!-- big image -->
+      <div class="ee-big-product">
+        <img alt="epic dadhat" src="assets/img/product-dadhat.jpg" />
+      </div>
+    </div>
+
+    <div id="beanie" class="ee-product-container">
       <!-- small images -->
       <div class="ee-small-products">
         <img class="ee-small-product-1" alt="epic beanie" src="assets/img/product-beanie-small-1.jpg" />
         <img class="ee-small-product-2" alt="epic beanie" src="assets/img/product-beanie-small-2.jpg" />
       </div>
       <!-- big image -->
-      <img alt="epic beanie" src="assets/img/product-beanie.jpg" />
+      <div class="ee-big-product">
+        <img alt="epic beanie" src="assets/img/product-beanie.jpg" />
+      </div>
     </div>
   </section>
 
-</body>
+  <!-- Jaba the Scripts -->
+  <script type="text/javascript" src="assets/js/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/lib/greensock/TweenMax.min.js"></script>
+  <script type="text/javascript" src="assets/js/scrollmagic/minified/ScrollMagic.min.js"></script>
+  <script type="text/javascript" src="assets/js/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+  <script type="text/javascript" src="assets/js/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+  <script type="text/javascript" src="assets/js/index.js"></script>
 
-<!-- Drip
+  <!-- Drip
 <script type="text/javascript">
   var _dcq = _dcq || [];
   var _dcs = _dcs || {};
@@ -165,5 +183,9 @@
   _gs('GSN-965741-P');
 </script>
 -->
+
+</body>
+
+
 
 </html>
