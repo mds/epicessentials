@@ -5,25 +5,22 @@ section
   right: 0
   z-index: 0
 
-// .ee-big-product-container
-//   position: absolute
-//   top: 0
-//   left: 0
-//   right: 0
-//   z-index: 0
-
-  // & > div
-  //   margin: 0 0 -10px 0
-
 .ee-big-product-container
   position: relative
+  padding: .5rem 1rem
+
+  &:first-child
+    padding: 1rem 1rem .5rem
+
+  &:last-child
+    padding: .5rem 1rem 6rem
 
 .ee-small-products
   position: absolute
   left: 0
   right: 0
-  top: 50%
-  transform: translateY(-50%)
+  z-index: 10
+  top: 80%
   margin: auto
   max-width: 640px
   display: grid
@@ -31,3 +28,21 @@ section
 
   img
     max-width: 250px
+
+    &:first-child
+      margin-top: 8rem
+
+
+// adjustments for parrallax
+#shirt .ee-small-products
+  top: 60%
+
+#hoodie .ee-small-products
+  top: 60%
+
+#hat .ee-small-products
+  top: 60%
+
+#beanie .ee-small-products
+    top: 60%
+

@@ -1,16 +1,33 @@
 $( document ).ready(function() {
 
+  // parallax (forgive me father for I have sinned)
   var rellax = new Rellax('.rellax', {
-    // center: true
+    center: true,
     callback: function(position) {
         // callback every position change
         console.log(position);
     }
   });
 
-  // $('.class').on("click", function (event) {
-  //   something();
-  // });
+  // scroll to anchor
+  var $root = $('html, body');
+  $('a[href^="#"]').click(function() {
+      var href = $.attr(this, 'href');
+
+      $root.animate({
+          scrollTop: $(href).offset().top
+      }, 1000, function () {
+          window.location.hash = href;
+      });
+
+      return false;
+  });
+
+  // updates hashmark on navigation
+  $('.ee-nav a').on("click", function (event) {
+    $('.ee-nav a').removeClass("ee-nav--is-active"); // remove has from all
+    $(this).addClass("ee-nav--is-active"); // add to the one that was clicked
+  });
 
   // function something(){
   //   console.log("something");

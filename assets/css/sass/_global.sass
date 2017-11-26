@@ -2,11 +2,13 @@
   box-sizing: border-box
 
 *::-moz-selection
-  background: yellow
+  background: $color-red
+  color: $color-white
   outline: 1px solid red
 
 *::selection
-  background: yellow
+  background: $color-red
+  color: $color-white
 
 .is-hidden
   display: none !important
@@ -27,6 +29,7 @@ body
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   text-transform: lowercase
+  margin: 0
 
 a
   text-decoration: none
@@ -36,6 +39,7 @@ a
 img,
 svg
   width: 100%
+  margin: 0
 
 svg
   text-align: center

@@ -1,1 +1,1 @@
-$(document).ready(function(){var l=new Rellax(".rellax",{callback:function(l){console.log(l)}})});
+$(document).ready(function(){var e=new Rellax(".rellax",{center:!0,callback:function(e){console.log(e)}}),a=$("html, body");$('a[href^="#"]').click(function(){var e=$.attr(this,"href");return a.animate({scrollTop:$(e).offset().top},1e3,function(){window.location.hash=e}),!1}),$(".ee-nav a").on("click",function(e){$(".ee-nav a").removeClass("ee-nav--is-active"),$(this).addClass("ee-nav--is-active")})});

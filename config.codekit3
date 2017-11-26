@@ -186,7 +186,7 @@
 		"oAP": "\/assets\/img\/product-hat-small-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/img\/product-hat-small-2.jpg": {
@@ -211,7 +211,7 @@
 		},
 	"\/assets\/img\/product-hoodie-small-1.jpg": {
 		"ft": 16384,
-		"iS": 38971,
+		"iS": 87890,
 		"oA": 0,
 		"oAP": "\/assets\/img\/product-hoodie-small-1.jpg",
 		"oF": 0,
@@ -221,7 +221,7 @@
 		},
 	"\/assets\/img\/product-hoodie-small-2.jpg": {
 		"ft": 16384,
-		"iS": 5617,
+		"iS": 65272,
 		"oA": 0,
 		"oAP": "\/assets\/img\/product-hoodie-small-2.jpg",
 		"oF": 0,
