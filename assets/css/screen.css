@@ -157,11 +157,7 @@ section {
 
 .ee-big-product-container {
   position: relative;
-  padding: .5rem 1rem; }
-  .ee-big-product-container:first-child {
-    padding: 1rem 1rem .5rem; }
-  .ee-big-product-container:last-child {
-    padding: .5rem 1rem 7rem; }
+  margin-bottom: -10px; }
 
 .ee-small-products {
   position: absolute;
