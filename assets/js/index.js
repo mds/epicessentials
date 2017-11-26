@@ -25,6 +25,7 @@ $( document ).ready(function() {
       $('.ee-nav a[href^="#shirt"]').addClass("ee-nav--is-active"); // make active
       $(".ee-product-title").html("epic shirt");
       $(".ee-product-price").html("$35");
+      $(".ee-product-style").html('<p>select a color</p><li><a href="#">black</a></li><li><a href="#">grey</a></li><li><a href="#">white</a></li>');
     });
   // END Shirt Scene ------------------------------------------------------------
 
@@ -47,7 +48,8 @@ $( document ).ready(function() {
       $('.ee-nav a').removeClass("ee-nav--is-active"); // remove active from all
       $('.ee-nav a[href^="#hoodie"]').addClass("ee-nav--is-active"); // make active
       $(".ee-product-title").html("epic hoodie");
-      $(".ee-product-price").html("$75");
+      $(".ee-product-price").html("$60");
+      $(".ee-product-style").html('<p>select a color</p><li><a href="#">black</a></li><li><a href="#">grey</a></li>');
     });
   // END Hoodie Scene ------------------------------------------------------------
 
@@ -71,6 +73,8 @@ $( document ).ready(function() {
       $('.ee-nav a[href^="#truckerhat"]').addClass("ee-nav--is-active"); // make active
       $(".ee-product-title").html("epic trucker hat");
       $(".ee-product-price").html("$25");
+      $(".ee-product-style").html('<p>select a style</p><li><a href="#">regular</a></li><li><a href="#">distressed</a></li>');
+      $(".ee-product-size").html('<p>(one size fits all)</p>');
     });
   // END Trucker Hat Scene ------------------------------------------------------------
 
@@ -94,6 +98,8 @@ $( document ).ready(function() {
       $('.ee-nav a[href^="#beanie"]').addClass("ee-nav--is-active"); // make active
       $(".ee-product-title").html("epic beanie");
       $(".ee-product-price").html("$25");
+      $(".ee-product-style").html('<p>(black)</p>');
+      $(".ee-product-size").html('<p>(one size fits all)</p>');
     });
   // END Beanie Scene ------------------------------------------------------------
 
@@ -118,9 +124,9 @@ $( document ).ready(function() {
   //   }
   // });
 
-  // CUSTOM SCROLL JS (possibly replace with scroll magic)
+  // CUSTOM SCROLL JS
   var $root = $('html, body');
-  $('a[href^="#"]').click(function() {
+  $('.ee-nav a[href^="#"]').click(function() {
       var href = $.attr(this, 'href');
 
       // updates hashmark on nav
@@ -129,7 +135,7 @@ $( document ).ready(function() {
 
       // animates scroll
       $root.animate({
-          scrollTop: $(href).offset().top + 10
+          scrollTop: $(href).offset().top + 5
       }, 1000, function () {
           window.location.hash = href;
       });

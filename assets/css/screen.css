@@ -137,10 +137,13 @@ header {
   margin-bottom: 1.5rem; }
 
 .ee-product-info a {
-  padding: .25rem; }
+  padding: .25rem .5rem; }
   .ee-product-info a:hover {
     background: black;
     color: #fbf8ed; }
+
+.ee-product-size li:last-child {
+  display: block; }
 
 .ee-inline li {
   display: inline-block; }
