@@ -141,6 +141,7 @@ header {
 
 .ee-product-info a {
   padding: .25rem .5rem;
+  margin-left: .5rem;
   cursor: pointer; }
   .ee-product-info a:hover {
     background: black;

@@ -16,17 +16,19 @@ $(window).on("load", function() {
   // build scene
   var scene1 = new ScrollMagic.Scene({triggerElement: "#shirt", triggerHook: 'onLeave', duration: $(".ee-product-container").height()})
     .setTween(tweenShirt)
-    .addIndicators() // add indicators (requires plugin)
+    // .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
   // update product info
     scene1.on("enter", function (event) {
       $('.ee-nav a').removeClass("ee-nav--is-active"); // remove active from all
       $('.ee-nav a[href^="#shirt"]').addClass("ee-nav--is-active"); // make active
-      $(".ee-product-title").html("epic shirt");
+      $(".ee-product-title").html('epic <span class="shuffle">shirt</span>');
       $(".ee-product-price").html("$35");
       $(".ee-product-style").html('<p>select a color</p><li><a>black</a></li><li><a>grey</a></li><li><a>white</a></li>');
       $(".ee-product-size").html('<p>select a unisex size</p><li><a>s</a></li><li><a>m</a></li><li><a>l</a></li><li><a>xl</a></li><li><a>xxl</a></li><p>(they run small)</p>');
+      var shuffle = $(".shuffle")
+      shuffle.shuffleLetters();
     });
   // END Shirt Scene ------------------------------------------------------------
 
@@ -42,17 +44,19 @@ $(window).on("load", function() {
   // build scene
   var scene2 = new ScrollMagic.Scene({triggerElement: "#hoodie", triggerHook: 'onLeave', duration: $(".ee-product-container").height()})
     .setTween(tweenHoodie)
-    .addIndicators() // add indicators (requires plugin)
+    // .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
     // update product info
     scene2.on("enter", function (event) {
       $('.ee-nav a').removeClass("ee-nav--is-active"); // remove active from all
       $('.ee-nav a[href^="#hoodie"]').addClass("ee-nav--is-active"); // make active
-      $(".ee-product-title").html("epic hoodie");
+      $(".ee-product-title").html('epic <span class="shuffle">hoodie</span>');
       $(".ee-product-price").html("$60");
       $(".ee-product-style").html('<p>select a color</p><li><a>black</a></li><li><a>grey</a></li>');
       $(".ee-product-size").html('<p>select a unisex size</p><li><a>s</a></li><li><a>m</a></li><li><a>l</a></li><li><a>xl</a></li><li><a>xxl</a></li><p>(they run small)</p>');
+      var shuffle = $(".shuffle")
+      shuffle.shuffleLetters();
     });
   // END Hoodie Scene ------------------------------------------------------------
 
@@ -67,17 +71,19 @@ $(window).on("load", function() {
   // build scene
   var scene3 = new ScrollMagic.Scene({triggerElement: "#truckerhat", triggerHook: 'onLeave', duration: $(".ee-product-container").height()})
     .setTween(tweenTruckerHat)
-    .addIndicators() // add indicators (requires plugin)
+    // .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
   // update nav + info
     scene3.on("enter", function (event) {
       $('.ee-nav a').removeClass("ee-nav--is-active"); // remove active from all
       $('.ee-nav a[href^="#truckerhat"]').addClass("ee-nav--is-active"); // make active
-      $(".ee-product-title").html("epic trucker hat");
+      $(".ee-product-title").html('epic <span class="shuffle">trucker hat</span>');
       $(".ee-product-price").html("$25");
       $(".ee-product-style").html('<p>select a style</p><li><a>regular</a></li><li><a>distressed</a></li>');
-      $(".ee-product-size").html('<p>(one size fits all)</p>');
+      $(".ee-product-size").html('');
+      var shuffle = $(".shuffle")
+      shuffle.shuffleLetters();
     });
   // END Trucker Hat Scene ------------------------------------------------------------
 
@@ -92,17 +98,19 @@ $(window).on("load", function() {
   // build scene
   var scene4 = new ScrollMagic.Scene({triggerElement: "#dadhat", triggerHook: 'onLeave', duration: $(".ee-product-container").height()})
     .setTween(tweenDadHat)
-    .addIndicators() // add indicators (requires plugin)
+    // .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
   // update nav + info
     scene4.on("enter", function (event) {
       $('.ee-nav a').removeClass("ee-nav--is-active"); // remove active from all
       $('.ee-nav a[href^="#dadhat"]').addClass("ee-nav--is-active"); // make active
-      $(".ee-product-title").html("epic dad hat");
+      $(".ee-product-title").html('epic <span class="shuffle">dad hat</span>');
       $(".ee-product-price").html("$25");
-      $(".ee-product-style").html('<p>(black)</p>');
-      $(".ee-product-size").html('<p>(one size fits all)</p>');
+      $(".ee-product-style").html('');
+      $(".ee-product-size").html('');
+      var shuffle = $(".shuffle")
+      shuffle.shuffleLetters();
     });
   // END dad hat scene ------------------------------------------------------------
 
@@ -117,17 +125,19 @@ $(window).on("load", function() {
   // build scene
   var scene5 = new ScrollMagic.Scene({triggerElement: "#beanie", triggerHook: 'onLeave', duration: $(".ee-product-container").height()})
     .setTween(tweenBeanie)
-    .addIndicators() // add indicators (requires plugin)
+    // .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
   // update nav + info
     scene5.on("enter", function (event) {
       $('.ee-nav a').removeClass("ee-nav--is-active"); // remove active from all
-      $('.ee-nav a[href^="#beanie"]').addClass("ee-nav--is-active"); // make active
-      $(".ee-product-title").html("epic beanie");
+      $('.ee-nav a[href^="#beanie"]').addClass("ee-nav--is-active"); // make act
+      $(".ee-product-title").html('epic <span class="shuffle">beanie</span>');
       $(".ee-product-price").html("$25");
-      $(".ee-product-style").html('<p>(black)</p>');
-      $(".ee-product-size").html('<p>(one size fits all)</p>');
+      $(".ee-product-style").html('');
+      $(".ee-product-size").html('');
+      var shuffle = $(".shuffle")
+      shuffle.shuffleLetters();
     });
   // END Beanie Scene ------------------------------------------------------------
 
@@ -142,7 +152,7 @@ $(window).on("load", function() {
 
       // animates scroll
       $root.animate({
-          scrollTop: $(href).offset().top + 5
+          scrollTop: $(href).offset().top + 10
       }, 1000, function () {
           window.location.hash = href;
       });

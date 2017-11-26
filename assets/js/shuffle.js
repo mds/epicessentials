@@ -124,10 +124,10 @@
     var pool = "";
 
     if (type == "lowerLetter"){
-      pool = "epic";
+      pool = "mds";
     }
     else if (type == "upperLetter"){
-      pool = "epic";
+      pool = "mds";
     }
     else if (type == "symbol"){
       pool = ",.?/\\(^)![]{}*&^%$#'\"";
