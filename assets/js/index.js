@@ -1,13 +1,15 @@
 $( document ).ready(function() {
 
-  // parallax (forgive me father for I have sinned)
-  var rellax = new Rellax('.rellax', {
-    center: true,
-    callback: function(position) {
-        // callback every position change
-        console.log(position);
-    }
-  });
+  // rellax parallax
+  // var rellax = new Rellax('.rellax', {
+  //   center: true,
+  //   speed: -2,
+  //   vertical: true,
+  //   callback: function(position) {
+  //       // callback every position change
+  //       console.log(position);
+  //   }
+  // });
 
   // scroll to anchor
   var $root = $('html, body');
@@ -23,17 +25,11 @@ $( document ).ready(function() {
       return false;
   });
 
-  // updates hashmark on navigation
+  // updates hashmark on navigation click
   $('.ee-nav a').on("click", function (event) {
     $('.ee-nav a').removeClass("ee-nav--is-active"); // remove has from all
     $(this).addClass("ee-nav--is-active"); // add to the one that was clicked
   });
 
-  // function something(){
-  //   console.log("something");
-  // }
-
-  // event tracking
-  // $('.class').click(function(){ _gs('event', 'class was clicked') });
 
 });

@@ -90,7 +90,7 @@ header {
     padding: 1rem; }
     @media (min-width: 640px) {
       header > div {
-        padding: 2.5rem 4rem; } }
+        padding: 3rem 4rem; } }
   header li {
     padding: .5em 0; }
   @media (min-width: 640px) {
@@ -165,27 +165,17 @@ section {
   left: 0;
   right: 0;
   z-index: 10;
-  top: 80%;
+  top: 60%;
+  padding: 1rem;
   margin: auto;
   max-width: 640px;
   display: grid;
   grid-template-columns: 1fr 1fr; }
   .ee-small-products img {
-    max-width: 250px; }
+    max-width: 250px;
+    box-shadow: 40px 40px 80px 0 rgba(0, 0, 0, 0.2); }
     .ee-small-products img:first-child {
-      margin-top: 8rem; }
-
-#shirt .ee-small-products {
-  top: 60%; }
-
-#hoodie .ee-small-products {
-  top: 60%; }
-
-#hat .ee-small-products {
-  top: 60%; }
-
-#beanie .ee-small-products {
-  top: 60%; }
+      margin-top: 6rem; }
 
 footer {
   position: fixed;
@@ -205,9 +195,16 @@ footer {
     padding: .5em;
     display: inline-block; }
 
+.ee-social a {
+  padding: .25rem; }
+  .ee-social a:hover {
+    background: black;
+    color: #fbf8ed; }
+
 .ee-legal {
   text-align: right;
-  position: relative; }
+  position: relative;
+  top: -.65rem; }
   .ee-legal span {
     font-family: monospace;
     font-weight: bold; }
