@@ -117,7 +117,7 @@ header {
   display: block;
   color: black;
   position: absolute;
-  top: 3px;
+  top: 0px;
   left: -20px; }
 
 .ee-nav a:before {
@@ -208,5 +208,4 @@ footer {
   position: relative;
   top: -.65rem; }
   .ee-legal span {
-    font-family: monospace;
-    font-weight: bold; }
+    letter-spacing: 0; }
